@@ -1,0 +1,57 @@
+/* 全局样式 */
+* {
+    box-sizing: border-box; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 英雄图片部分 */
+.hero-image {
+    background-image: url(kkk.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 350px;
+}
+.hero_text {
+    color: rgb(172, 186, 213);
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 5rem;
+    padding: 10px;
+}
+
+/* 故事简介部分 - 单独的样式，不影响两列布局 */
+.story-info {
+    margin: 100px auto;
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; /* 使文本两端对齐 */
+}
+
+/* 两列布局部分 - 确保应用到正确的容器 */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 修正为 1fr 3fr */
+    gap: 50px;
+    margin: 40px auto;
+    width: 80%;
+    align-items: center; /* 垂直居中对齐 */
+}
+/* 为 Jonathan 介绍文本单独设置样式 */
+.info-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
