@@ -1,4 +1,3 @@
-/* 全局样式 */
 * {
     box-sizing: border-box; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -9,7 +8,7 @@ img {
     display: block;
 }
 
-/* 英雄图片部分 */
+
 .hero-image {
     background-image: url(kkk.jpeg);
     background-position: center;
@@ -31,25 +30,40 @@ img {
     padding: 10px;
 }
 
-/* 故事简介部分 - 单独的样式，不影响两列布局 */
+.jojo1{
+  color:rgb(172, 186, 213);
+  text-align: center;
+  font-size: 40px;
+  text-decoration: overline;
+  margin-top:100px;
+}
+
 .story-info {
     margin: 100px auto;
     max-width: 800px;
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify; /* 使文本两端对齐 */
+    text-align: justify;
 }
 
-/* 两列布局部分 - 确保应用到正确的容器 */
+
 .two-column {
     display: grid;
-    grid-template-columns: 1fr 3fr; /* 修正为 1fr 3fr */
+    grid-template-columns: 1fr 3fr; 
     gap: 50px;
     margin: 40px auto;
     width: 80%;
-    align-items: center; /* 垂直居中对齐 */
+    align-items: center; 
 }
-/* 为 Jonathan 介绍文本单独设置样式 */
+
+.jojo2{
+  color:rgb(172, 186, 213);
+  text-align: center;
+  font-size: 40px;
+  text-decoration: overline;
+  margin-top:100px;
+}
+
 .info-text p {
     font-size: 18px;
     line-height: 1.6;
